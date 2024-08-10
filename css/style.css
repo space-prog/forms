@@ -84,10 +84,12 @@ h1 {
 }
 
 .form1_textarea {
+    resize: vertical;
     padding: 16px 0 0 17px;
     border: 1px solid #cccccc;
     width: 100%;
     min-height: 131px;
+    max-height: 240px;
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 400;
@@ -109,7 +111,15 @@ h1 {
     box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
 }
 
-#form1_mail:focus {
+
+input,
+textarea {
+    transition: all .3s ease;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
     box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
     background-color: #ffffff;
     border: 1px solid #3e6aff;
