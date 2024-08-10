@@ -41,8 +41,6 @@ h1 {
 
 .form1 input {
     margin-bottom: 9px;
-    width: 330px;
-    height: 41px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -82,11 +80,37 @@ h1 {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+    margin-bottom: 9px;
 }
 
-.form1_option {
+.form1_textarea {
+    padding: 16px 0 0 17px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    min-height: 131px;
     font-size: 14px;
-    color: #ffffff;
+    color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
+    margin-bottom: 9px;
+}
+
+#form1_send {
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    width: 333px;
+    min-height: 43px;
+    border-radius: 3px;
+    background-color: #12d661;
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+}
+
+#form1_mail:focus {
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
 }
