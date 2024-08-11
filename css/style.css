@@ -71,6 +71,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .form1_select {
@@ -112,13 +113,16 @@ h1 {
     min-height: 43px;
     border-radius: 3px;
     background-color: #12d661;
+    transition: all .3s ease;
+}
+
+#form1_send:hover {
     box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
 }
 
-
 .form1 input,
 .form1 textarea {
-    transition: box-shadow .3s ease;
+    transition: all .3s ease;
     outline: none;
 }
 
@@ -229,4 +233,84 @@ h1 {
 .label_checkbox {
     display: block;
     margin-bottom: 14px;
+}
+
+hr {
+    border: none;
+    background-color: #dcdcde;
+    height: 1px;
+    width: 100%;
+}
+
+.block2 {
+    padding-top: 50px;
+}
+
+.block2 input {
+    appearance: none;
+}
+
+.span,
+.span1,
+.span2 {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.span label,
+.span1 label,
+.span2 label {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.span input,
+.span1 input,
+.span2 input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background-color: #3e6aff;
+    border-radius: 50%;
+    z-index: 2;
+    opacity: 0;
+
+}
+
+#radio1:checked {
+    opacity: 1;
+}
+
+#radio1:checked .span {
+    border-color: #3e6aff;
+}
+
+#radio2:checked {
+    opacity: 1;
+}
+
+#radio2:checked .span1 {
+    border: 1px solid #3e6aff;
+}
+
+#radio3:checked {
+    opacity: 1;
+}
+
+#radio3:checked .span2 {
+    border-color: #3e6aff;
+}
+
+.form2 {
+    max-width: 114px;
 }
