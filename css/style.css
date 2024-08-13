@@ -403,3 +403,7 @@ hr {
     font-weight: 700;
     font-family: "Roboto";
 }
+
+.down {
+    padding-top: 12px;
+}
