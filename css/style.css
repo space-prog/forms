@@ -455,9 +455,17 @@ hr {
     width: 71px;
     height: 71px;
     filter: grayscale(100%);
-    background: url(../img/Boy.png) center/cover;
     border-radius: 50%;
     z-index: 2;
+    transition: all .2s ease;
+}
+
+.span1_block3 input {
+    background: url(../img/Boy.png) center/cover;
+}
+
+.span2_block3 input {
+    background: url(../img/Girl.png) center/cover;
 }
 
 #block3_radio1:checked,
@@ -465,9 +473,67 @@ hr {
     filter: none;
 }
 
-.radiolabel {
-    font-size: 14px;
+.radiolabel1 {
+    font-size: 16px;
     color: #1f222c;
-    font-weight: 400;
+    font-weight: 700;
     font-family: "Roboto";
+}
+
+.radios_div {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.form3 {
+    max-width: 664px;
+}
+
+#checkbox,
+#checkbox1{
+  display: none;
+}
+
+input + label {
+  position: relative;
+  padding-left: 50px;
+}
+
+input + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 25px;
+  background-color: #ddd;
+  border-radius: 12px;
+  transition: all .1s ease;
+}
+
+input + label:after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all .1s ease;
+}
+
+input:checked + label:before {
+  background-color: limegreen;
+}
+
+input:checked + label:after {
+  left: 22px;
+}
+
+label {
+  font-family: 'Franklin Gothic';
+  padding-top: 3px;
 }
