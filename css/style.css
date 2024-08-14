@@ -146,12 +146,12 @@ h1 {
 .popup {
     display: none;
     position: fixed;
-    top: 26%;
-    right: 203px;
+    top: 50%;
+    right: 0;
     min-width: 280px;
     min-height: 252px;
     padding: 27px 25px;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 9999;
     border-radius: 5px;
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.15);
@@ -487,53 +487,40 @@ hr {
 }
 
 .form3 {
+    align-items: center;
     max-width: 664px;
 }
 
-#checkbox,
-#checkbox1{
-  display: none;
+.block3_checkboxes span {
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+    position: relative;
+    width: 45px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: #cfcfd1;
 }
 
-input + label {
-  position: relative;
-  padding-left: 50px;
+.block3_checkboxes input {
+    transition: all .3s ease;
+    appearance: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
-input + label:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 25px;
-  background-color: #ddd;
-  border-radius: 12px;
-  transition: all .1s ease;
+.block3_checkboxes label {
+    display: block;
+    padding-left: 65px;
+    min-width: 165px;
 }
 
-input + label:after {
-  content: "";
-  position: absolute;
-  top: 58%;
-  left: 2px;
-  width: 21px;
-  height: 21px;
-  background-color: #fff;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: all .1s ease;
-}
-
-input:checked + label:before {
-  background-color: limegreen;
-}
-
-input:checked + label:after {
-  left: 22px;
-}
-
-label {
-  font-family: 'Franklin Gothic';
-  padding-top: 3px;
+.block3_checkboxes input:checked {
+    left: 22px;
 }
