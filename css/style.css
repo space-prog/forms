@@ -248,7 +248,7 @@ hr {
 }
 
 .block2 {
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .block2 input {
@@ -276,7 +276,9 @@ hr {
 
 .span label,
 .span1 label,
-.span2 label {
+.span2 label,
+.span1_block3 label,
+.span2_block3 label {
     display: inline-block;
     padding-left: 50px;
 }
@@ -388,8 +390,9 @@ hr {
 }
 
 .date {
-    width: 473px;
-    height: 114px;
+    display: flex;
+    min-width: 473px;
+    max-height: 114px;
     padding: 25px 21px;
     box-sizing: border-box;
     border-radius: 3px;
@@ -404,6 +407,67 @@ hr {
     font-family: "Roboto";
 }
 
+.up p {
+    padding-right: 33px;
+}
+
 .down {
-    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
+
+.down input {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding: 11px 13px;
+    max-width: 148px;
+    max-height: 41px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.name1 {
+    padding-top: 50px;
+}
+
+.span1_block3,
+.span2_block3 {
+    position: relative;
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-bottom: 14px;
+}
+
+.span1_block3 input,
+.span2_block3 input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    appearance: none;
+    width: 71px;
+    height: 71px;
+    filter: grayscale(100%);
+    background: url(../img/Boy.png) center/cover;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#block3_radio1:checked,
+#block3_radio2:checked {
+    filter: none;
+}
+
+.radiolabel {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
 }
