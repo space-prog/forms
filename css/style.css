@@ -37,6 +37,9 @@ th {
 }
 
 table textarea {
+    width: 100%;
+    min-height: 131px;
+    margin-bottom: 14px;
     resize: vertical;
 }
 
@@ -47,12 +50,24 @@ table p {
     font-family: "Roboto";
 }
 
+thead th {
+    padding-bottom: 14px;
+}
+
 select {
     width: 100%;
 }
 
 button[type="submit"] {
-    width: 100%;
+    width: 101%;
+    border: none;
+    height: 43px;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
 }
 
 .flex-between {
@@ -587,6 +602,7 @@ hr {
     position: relative;
     width: 341px;
     padding: 21px 0;
+    margin-bottom: 14px;
 }
 
 .arrow::before {
@@ -657,4 +673,19 @@ hr {
 .radiotd {
     display: flex;
     column-gap: 80px;
+}
+
+#inputFile {
+    visibility: hidden;
+}
+
+.FileLabelDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 41px;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    background-color: #3e6aff;
 }

@@ -14,7 +14,7 @@
         <div class="block1">
             <div class="form1">
                 <p class="name">01. проста форма</p>
-                <form action="Get">
+                <form action="#" method="Get">
                     <input type="text" name="" placeholder="Введіть ім’я">
                     <input type="email" name="" id="form1_mail" placeholder="Email">
                     <select name="" class="form1_select">
@@ -29,7 +29,7 @@
             </div>
             <div class="form6">
                 <div class="open"><a href="#" class="name">06. фіксована форма</a></div>
-                <form action="Get" class="popup">
+                <form action="#" method="Get"class="popup">
                     <a href="#" class="close-popup">
                         <img src="img/x.png" alt="">
                     </a>
@@ -49,7 +49,7 @@
         <hr>
         <div class="block2">
             <p class="name name1">02. елементи</p>
-            <form action="Get" class="form2 flex-between">
+            <form action="#" method="Get"class="form2 flex-between">
                 <div class="radio_checkbox">
                     <div class="inputs">
                         <div class="radios">
@@ -129,7 +129,7 @@
         <hr>
         <div class="block3">
             <p class="name name1">03. стилізовані чекбокси</p>
-            <form action="Get" class="form3 flex-between">
+            <form action="#" method="Get"class="form3 flex-between">
                 <div class="radios">
                     <div class="radios_div">
                         <span class="span1_block3">
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div class="block3_checkboxes">
-                    <form action="#" class="form_checkboxes">
+                    <form action="#" method="Get" class="form_checkboxes">
                         <span>
                             <input type="checkbox" id="block3checkbox">
                             <label for="block3checkbox">Отримувати новини</label>
@@ -165,7 +165,7 @@
         <hr>
         <div class="block4">
             <p class="name name1">04. форма таблицею</p>
-            <form action="Get" class="form4">
+            <form action="#" method="Get" class="form4">
                 <table>
                     <thead>
                         <th>Заповніть усі необхідні поля</th>
@@ -177,7 +177,7 @@
                         </tr>
                         <tr>
                             <td><p>Пароль:</p></td>
-                            <td class="tdInput"><input type="password" name=""class="tableInput"></td>
+                            <td class="tdInput"><input type="password" name="" class="tableInput" placeholder="Введіть не менше 6 символів"></td>
                         </tr>
                         <tr>
                             <td><p>Місто:</p></td>
@@ -209,12 +209,15 @@
                         </tr>
                         <tr>
                             <td><p>Фото:</p></td>
-                            <td><input type="file" name=""></td>
+                            <td class="tdFile">
+                                <input type="file" name="" id="inputFile">
+                                <div class="FileLabelDiv"><label for="inputFile" id="FileLabel">asdfafsd</label></div>
+                            </td>
                         </tr>
                         <tr>
                             <td><p>Коментарій:</p></td>
-                            <td>
-                                <textarea name=""></textarea><br>
+                            <td class="textTd">
+                                <textarea name="" placeholder="Введіть текст повідомлення"></textarea><br>
                                 <button type="submit">asdfasdf</button>
                             </td>
                         </tr>
