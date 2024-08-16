@@ -29,6 +29,32 @@ h1 {
     text-align: center;
 }
 
+th {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+table textarea {
+    resize: vertical;
+}
+
+table p {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+select {
+    width: 100%;
+}
+
+button[type="submit"] {
+    width: 100%;
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -489,6 +515,7 @@ hr {
 .form3 {
     align-items: center;
     max-width: 664px;
+    padding-bottom: 50px;
 }
 
 .block3_checkboxes span {
@@ -516,6 +543,10 @@ hr {
 }
 
 .block3_checkboxes label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
     display: block;
     padding-left: 65px;
     min-width: 165px;
@@ -523,4 +554,107 @@ hr {
 
 .block3_checkboxes input:checked {
     left: 22px;
+}
+
+.tdInput {
+    width: 341px;
+}
+
+.tableInput:not([type="radio"], [type="file"]) {
+    width: 100%;
+    height: 41px;
+    margin-bottom: 14px;
+    padding-left: 17px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.tableSelect {
+    overflow: hidden;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.arrow {
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    position: relative;
+    width: 341px;
+    padding: 21px 0;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 57%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top-color: #000;
+}
+
+#tableSelect {
+    padding-left: 16px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+}
+
+#tablespan1,
+#tablespan2 {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+
+#labelman,
+#labelgirl {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+#man,
+#girl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    appearance: none;
+    z-index: 5;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+
+#man:checked,
+#girl:checked {
+    background-color: #3e6aff;
+}
+
+.span1 {
+    display: block;
+}
+
+.radiotd {
+    display: flex;
+    column-gap: 80px;
 }
