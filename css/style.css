@@ -17,6 +17,7 @@
 }
 
 * {
+    outline: none;
     margin: 0;
     padding: 0;
 }
@@ -778,6 +779,17 @@ hr {
     border-top-color: #000;
 }
 
+.table_arrow::after {
+    content: "";
+    position: absolute;
+    right: 33px;
+    top: 25%;
+    transform: rotate(180deg);
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+}
+
 .tableSelect1 {
     overflow: hidden;
     height: 41px;
@@ -922,4 +934,18 @@ hr {
 
 .buttons {
     padding-top: 29px;
+}
+
+.tbody2 input:not([type="checkbox"]) {
+    box-sizing: border-box;
+    padding: 17px;
+}
+
+.tbody2 input:focus:not([type="checkbox"]) {
+    border: 1px solid #3e6aff;
+    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+}
+
+.table1_textarea {
+    border: 1px solid #ccc;
 }
