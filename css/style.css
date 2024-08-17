@@ -36,22 +36,36 @@ th {
     font-family: "Roboto";
 }
 
-table textarea {
+
+thead th {
+    padding-bottom: 14px;
+}
+
+.form4 input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3e6aff;
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 1);
+}
+
+.table1 textarea {
     width: 100%;
     min-height: 131px;
     margin-bottom: 14px;
+    box-sizing: border-box;
+    padding: 17px;
     resize: vertical;
-}
-
-table p {
     font-size: 14px;
-    color: #1f222c;
+    color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
 }
 
-thead th {
-    padding-bottom: 14px;
+.table1 p {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
 }
 
 select {
@@ -644,6 +658,10 @@ hr {
 #labelgirl {
     display: inline-block;
     padding-left: 25px;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
 }
 
 #man,
@@ -688,4 +706,220 @@ hr {
     border-radius: 3px;
     margin-bottom: 14px;
     background-color: #3e6aff;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
+}
+
+.comment {
+    display: flex;
+}
+
+.block4 {
+    padding-bottom: 50px;
+}
+
+.tbody2 p {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.table2tr {
+    display: flex;
+    column-gap: 9px;
+}
+
+.table2tr p {
+    padding-bottom: 6px;
+}
+
+.th1 {
+    text-align: left;
+}
+
+.input_block_table2 {
+    width: 221px;
+}
+
+.input_block_table2 input {
+    width: 100%;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.table_hr {
+    margin-bottom: 25px;
+}
+
+.table_arrow {
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    position: relative;
+    width: 341px;
+    padding: 21px 0;
+    margin-bottom: 14px;
+}
+
+.table_arrow::before {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 57%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top-color: #000;
+}
+
+.tableSelect1 {
+    overflow: hidden;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+#tableSelect1 {
+    padding-left: 16px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+}
+
+.table_arrow {
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    display: block;
+    position: relative;
+    width: 221px;
+    padding: 21px 0;
+    margin-bottom: 14px;
+}
+
+.select_table {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 223px;
+}
+
+.location_td {
+    width: 100%;
+}
+
+.tr_last td {
+    width: 100%;
+}
+
+.tr_first {
+    padding-bottom: 29px;
+}
+
+.table2tr input {
+    width: 100%;
+    height: 41px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#tablespan3 {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all .4s ease;
+}
+
+#labelcustom {
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+    width: 380px;
+}
+
+#customCheckbox_table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    appearance: none;
+    z-index: 5;
+    width: 9px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#customCheckbox_table:checked {
+    background: url(../img/galochka.png);
+}
+
+.checkboxtd {
+    padding-top: 25px;
+    padding-bottom: 29px;
+    width: 100%;
+}
+
+
+.goback {
+    width: 180px;
+    height: 43px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #85868d;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.goback:hover {
+    background-color: #85868d;
+    color: #ffffff;
+}
+
+.buy {
+    width: 180px;
+    height: 43px;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.td_buy {
+    width: 180px;
+}
+
+.buy:hover {
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+}
+
+.buttons {
+    padding-top: 29px;
 }

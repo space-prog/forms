@@ -166,24 +166,24 @@
         <div class="block4">
             <p class="name name1">04. форма таблицею</p>
             <form action="#" method="Get" class="form4">
-                <table>
+                <table class="table1">
                     <thead>
                         <th>Заповніть усі необхідні поля</th>
                     </thead>
                     <tbody>
                         <tr>
                             <td><p>ФІО:</p></td>
-                            <td class="tdInput"><input type="text" name="" placeholder="Введіть ім’я" class="tableInput"></td>
+                            <td class="tdInput"><input type="text" name="" placeholder="Введіть ім’я" class="tableInput" required></td>
                         </tr>
                         <tr>
                             <td><p>Пароль:</p></td>
-                            <td class="tdInput"><input type="password" name="" class="tableInput" placeholder="Введіть не менше 6 символів"></td>
+                            <td class="tdInput"><input type="password" name="" class="tableInput" placeholder="Введіть не менше 6 символів" required></td>
                         </tr>
                         <tr>
                             <td><p>Місто:</p></td>
                             <td>
                                 <label for="tableSelect" class="arrow">
-                                    <select name="" id="tableSelect" class="tableSelect">
+                                    <select name="" id="tableSelect" class="tableSelect" required>
                                         <option value="" selected>Хмельницький</option>
                                         <option value="">Test</option>
                                     </select>
@@ -193,15 +193,15 @@
                         <tr>
                             <td><p>Стать:</p></td>
                             <td class="radiotd">
-                                <div class="dkfjgkdfs">
+                                <div class="tdradio1">
                                     <span id="tablespan1">
-                                        <input type="radio" name="stat" id="man">
+                                        <input type="radio" name="stat" id="man" required>
                                         <label for="man" id="labelman">Чоловік</label>
                                     </span>
                                 </div>
-                                <div class="xffxzcvxzcv">
+                                <div class="tdradio2">
                                     <span id="tablespan2">
-                                        <input type="radio" name="stat" id="girl">
+                                        <input type="radio" name="stat" id="girl" required>
                                         <label for="girl" id="labelgirl">Жінка</label>
                                     </span>
                                 </div>
@@ -210,20 +210,98 @@
                         <tr>
                             <td><p>Фото:</p></td>
                             <td class="tdFile">
-                                <input type="file" name="" id="inputFile">
-                                <div class="FileLabelDiv"><label for="inputFile" id="FileLabel">asdfafsd</label></div>
+                                <input type="file" name="" id="inputFile" required>
+                                <div class="FileLabelDiv"><label for="inputFile" id="FileLabel">Виберіть файл</label></div>
                             </td>
                         </tr>
                         <tr>
-                            <td><p>Коментарій:</p></td>
+                            <td class="comment"><p>Коментарій:</p></td>
                             <td class="textTd">
-                                <textarea name="" placeholder="Введіть текст повідомлення"></textarea><br>
-                                <button type="submit">asdfasdf</button>
+                                <textarea name="" placeholder="Введіть текст повідомлення" required></textarea><br>
+                                <button type="submit">Зареєструватися</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </form>
+        </div>
+        <hr>
+        <div class="block5">
+            <p class="name name1">05. форма таблицею</p>
+            <table>
+                <thead>
+                    <th class="th1">Оформлення заявки</th>
+                </thead>
+                <tbody class="tbody2">
+                    <tr class="table2tr tr_first">
+                        <td>
+                            <p>Прізвище та ім’я</p>
+                            <div class="input_block_table2"><input type="text" name="" id=""></div>
+                        </td>
+                        <td>
+                            <p>Ел. пошта</p>
+                            <div class="input_block_table2"><input type="email" name="" id=""></div>
+                        </td>
+                        <td>
+                            <p>Телефон</p>
+                            <div class="input_block_table2"><input type="tel" name="" id=""></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><hr class="table_hr"></td>
+                    </tr>
+                    <tr class="table2tr">
+                        <td>
+                            <p>Країна</p>
+                            <label for="tableSelect" class="table_arrow">
+                                <select name="" id="tableSelect1" class="tableSelect1" required>
+                                    <option value="" selected>Індонезія</option>
+                                    <option value="">Test</option>
+                                </select>
+                            </label>
+                        </td>
+                        <td class="location_td">
+                            <p>Адреса</p>
+                            <input type="text" name="" id="location">
+                        </td>
+                    </tr>
+                    <tr class="table2tr tr_last">
+                        <td>
+                            <p>Місто</p>
+                            <input type="text" name="" id="" class="last_inputs_table2">
+                        </td>
+                        <td>
+                            <p>Будинок</p>
+                            <input type="text" name="" id="" class="last_inputs_table2">
+                        </td>
+                        <td>
+                            <p>Поштовий індекс</p>
+                            <input type="text" name="" id="" class="last_inputs_table2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="checkboxtd">
+                            <div class="tdradio1">
+                                <span id="tablespan3">
+                                    <input type="checkbox" id="customCheckbox_table" required>
+                                    <label for="customCheckbox_table" id="labelcustom">Я погоджуюсь з правилами оплати та доставки товару</label>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><hr class="table_hr1"></td>
+                    </tr>
+                    <tr class="flex-between buttons">
+                        <td>
+                            <button class="goback">Повернутися назад</button>
+                        </td>
+                        <td class="td_buy">
+                            <button type="submit" class="buy">Оформити покупку</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="script.js"></script>
