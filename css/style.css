@@ -16,6 +16,11 @@
     font-display: swap;
 }
 
+button,
+a {
+    cursor: pointer;
+}
+
 * {
     outline: none;
     margin: 0;
@@ -37,13 +42,13 @@ th {
     font-family: "Roboto";
 }
 
-
 thead th {
     padding-bottom: 14px;
 }
 
 .form4 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: none;
     border-color: #3e6aff;
     box-shadow: 0 0 2.5px rgba(62, 106, 255, 1);
@@ -202,7 +207,7 @@ button[type="submit"] {
 .popup {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 60%;
     right: 0;
     min-width: 280px;
     min-height: 252px;
@@ -856,11 +861,12 @@ hr {
     background-color: #fff;
     border-radius: 3px;
     transition: all .4s ease;
+    overflow: hidden;
 }
 
 #labelcustom {
     display: inline-block;
-    padding-left: 25px;
+    padding-left: 9px;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
@@ -870,19 +876,25 @@ hr {
 
 #customCheckbox_table {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 145%;
+    left: 45%;
     appearance: none;
     z-index: 5;
     width: 9px;
     height: 7px;
-    background-color: #fff;
-    border-radius: 50%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-180deg);
+    transition: all .3s ease;
 }
 
 #customCheckbox_table:checked {
-    background: url(../img/galochka.png);
+    top: 45%;
+    width: 6px;
+    height: 9px;
+    left: 50%;
+    border-color:#3e6aff;
+    transform: translate(-50%, -50%) rotate(40deg);
 }
 
 .checkboxtd {
@@ -890,7 +902,6 @@ hr {
     padding-bottom: 29px;
     width: 100%;
 }
-
 
 .goback {
     width: 180px;
@@ -948,4 +959,8 @@ hr {
 
 .table1_textarea {
     border: 1px solid #ccc;
+}
+
+.tdradio1 {
+    display: flex;
 }

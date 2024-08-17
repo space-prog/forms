@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
         checkedRadioMan = document.querySelector("#man"),
         checkedRadioGirl = document.querySelector("#girl"),
         tableSpan1 = document.querySelector("#tablespan1"),
-        tableSpan2 = document.querySelector("#tablespan2")
-        
+        tableSpan2 = document.querySelector("#tablespan2"),
+        tableSpan3 = [document.querySelector("#tablespan3")],
+        customCheckbox_table = [document.querySelector("customCheckbox_table")]
+
     
     console.log(checkedInput, checkedSpan)
     
@@ -41,4 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
     checkedRadioGirl.addEventListener("change", function() {
         tableSpan2.style.borderColor = "#3e6aff"
     })
+
+    // tableSpan3.forEach((tableSpan3, index) => {
+    //     tableSpan3.addEventListener("click", function () {
+    //         customCheckbox_table.checked = true
+    //     })
+    // })
 })
