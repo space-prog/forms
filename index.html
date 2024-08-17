@@ -29,7 +29,7 @@
             </div>
             <div class="form6">
                 <div class="open"><a href="#" class="name">06. фіксована форма</a></div>
-                <form action="#" method="Get"class="popup">
+                <form action="#" method="Get" class="popup">
                     <a href="#" class="close-popup">
                         <img src="img/x.png" alt="">
                     </a>
@@ -38,8 +38,10 @@
                     <p class="up_text">Пароль</p>
                     <input type="password" class="input_phone">
                     <p><a href="#" class="send">Забули пароль?</a></p>
-                    <label for="remember" class="label_checkbox">
-                        <input type="checkbox" name="" id="remember">
+                    <span class="span_block6">
+                        <input type="checkbox" name="" class="customCheckbox" id="remember">
+                    </span>
+                    <label for="remember" class="label_checkbox labelcustom">
                         Запам’ятати пароль
                     </label>
                     <button type="submit">Увійти</button>
@@ -49,7 +51,7 @@
         <hr>
         <div class="block2">
             <p class="name name1">02. елементи</p>
-            <form action="#" method="Get"class="form2 flex-between">
+            <form action="#" method="Get" class="form2 flex-between">
                 <div class="radio_checkbox">
                     <div class="inputs">
                         <div class="radios">
@@ -75,21 +77,21 @@
                         <div class="checkboxes">
                             <div class="custom_checkbox">
                                 <span class="checkbox_span1">
-                                    <input type="checkbox" name="" id="checkbox1">
+                                    <input type="checkbox" class="customCheckbox" id="checkbox">
                                 </span>
-                                <label for="checkbox1" class="checkboxlabel">Прочитав умови договору</label><br>
+                                <label for="checkbox" class="checkboxlabel">Прочитав умови договору</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <span class="checkbox_span2">
-                                    <input type="checkbox" name="" id="checkbox2">
+                                    <input type="checkbox" name="" class="customCheckbox" id="checkbox1">
                                 </span>
-                                <label for="checkbox2" class="checkboxlabel">Згідний з ПДВ 9%</label><br>
+                                <label for="checkbox1" class="checkboxlabel">Згідний з ПДВ 9%</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <span class="checkbox_span3">
-                                    <input type="checkbox" name="" id="checkbox3" disabled>
+                                    <input type="checkbox" name="" class="customCheckbox checkbox2" disabled>
                                 </span>
-                                <label for="checkbox3" class="checkboxlabel checkboxlabel3">Отримувати новини на ел.
+                                <label for="checkbox2" class="checkboxlabel checkboxlabel3">Отримувати новини на ел.
                                     пошту</label>
                             </div>
                         </div>
@@ -101,21 +103,21 @@
                             <p>Статус</p>
                             <div class="custom_checkbox">
                                 <span class="checkbox_span4">
-                                    <input type="checkbox" name="" id="checkbox4">
+                                    <input type="checkbox" name="" class="customCheckbox" id="checkbox3">
                                 </span>
-                                <label for="checkbox4" class="checkboxlabel">Новинки</label><br>
+                                <label for="checkbox3" class="checkboxlabel">Новинки</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <span class="checkbox_span4">
-                                    <input type="checkbox" name="" id="checkbox5">
+                                    <input type="checkbox" name="" class="customCheckbox" id="checkbox4">
                                 </span>
-                                <label for="checkbox5" class="checkboxlabel">Акційні товари</label><br>
+                                <label for="checkbox4" class="checkboxlabel">Акційні товари</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <span class="checkbox_span4">
-                                    <input type="checkbox" name="checkbox" id="checkbox6">
+                                    <input type="checkbox" name="checkbox" class="customCheckbox" id="checkbox5">
                                 </span>
-                                <label for="checkbox6" class="checkboxlabel">Розпродаж</label><br>
+                                <label for="checkbox5" class="checkboxlabel">Розпродаж</label><br>
                             </div>
                         </div>
                         <div class="down">
@@ -129,7 +131,7 @@
         <hr>
         <div class="block3">
             <p class="name name1">03. стилізовані чекбокси</p>
-            <form action="#" method="Get"class="form3 flex-between">
+            <form action="#" method="Get" class="form3 flex-between">
                 <div class="radios">
                     <div class="radios_div">
                         <span class="span1_block3">
@@ -172,15 +174,23 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><p>ФІО:</p></td>
-                            <td class="tdInput"><input type="text" name="" placeholder="Введіть ім’я" class="tableInput" required></td>
+                            <td>
+                                <p>ФІО:</p>
+                            </td>
+                            <td class="tdInput"><input type="text" name="" placeholder="Введіть ім’я" class="tableInput"
+                                    required></td>
                         </tr>
                         <tr>
-                            <td><p>Пароль:</p></td>
-                            <td class="tdInput"><input type="password" name="" class="tableInput" placeholder="Введіть не менше 6 символів" required></td>
+                            <td>
+                                <p>Пароль:</p>
+                            </td>
+                            <td class="tdInput"><input type="password" name="" class="tableInput"
+                                    placeholder="Введіть не менше 6 символів" required></td>
                         </tr>
                         <tr>
-                            <td><p>Місто:</p></td>
+                            <td>
+                                <p>Місто:</p>
+                            </td>
                             <td>
                                 <label for="tableSelect" class="arrow">
                                     <select name="" id="tableSelect" class="tableSelect" required>
@@ -191,7 +201,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><p>Стать:</p></td>
+                            <td>
+                                <p>Стать:</p>
+                            </td>
                             <td class="radiotd">
                                 <div class="tdradio1">
                                     <span id="tablespan1">
@@ -208,16 +220,22 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><p>Фото:</p></td>
+                            <td>
+                                <p>Фото:</p>
+                            </td>
                             <td class="tdFile">
                                 <input type="file" name="" id="inputFile" required>
-                                <div class="FileLabelDiv"><label for="inputFile" id="FileLabel">Виберіть файл</label></div>
+                                <div class="FileLabelDiv"><label for="inputFile" id="FileLabel">Виберіть файл</label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="comment"><p>Коментарій:</p></td>
+                            <td class="comment">
+                                <p>Коментарій:</p>
+                            </td>
                             <td class="textTd">
-                                <textarea name="" placeholder="Введіть текст повідомлення" required class="table1_textarea"></textarea><br>
+                                <textarea name="" placeholder="Введіть текст повідомлення" required
+                                    class="table1_textarea"></textarea><br>
                                 <button type="submit">Зареєструватися</button>
                             </td>
                         </tr>
@@ -248,7 +266,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><hr class="table_hr"></td>
+                        <td>
+                            <hr class="table_hr">
+                        </td>
                     </tr>
                     <tr class="table2tr">
                         <td>
@@ -283,14 +303,17 @@
                         <td class="checkboxtd">
                             <div class="tdradio1">
                                 <span id="tablespan3">
-                                    <input type="checkbox" id="customCheckbox_table" required>
+                                    <input type="checkbox" class="customCheckbox" id="checkbox6" required>
                                 </span>
-                                <label for="customCheckbox_table" id="labelcustom">Я погоджуюсь з правилами оплати та доставки товару</label>
+                                <label for="checkbox6" class="labelcustom">Я погоджуюсь з правилами оплати та доставки
+                                    товару</label>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td><hr class="table_hr1"></td>
+                        <td>
+                            <hr class="table_hr1">
+                        </td>
                     </tr>
                     <tr class="flex-between buttons">
                         <td>
