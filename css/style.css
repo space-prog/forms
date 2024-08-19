@@ -183,6 +183,8 @@ button[type="submit"] {
 }
 
 #form1_send:hover {
+    background-color: #07be51;
+
     box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
 }
 
@@ -207,8 +209,8 @@ button[type="submit"] {
 .popup {
     display: none;
     position: fixed;
-    top: 60%;
-    right: 0;
+    top: 50%;
+    right: -50px;
     min-width: 280px;
     min-height: 252px;
     padding: 27px 25px;
@@ -847,12 +849,10 @@ hr {
     color: #1f222c;
     font-weight: 400;
     font-family: "Roboto";
-    width: 380px;
 }
 
 .label_checkbox {
     overflow: hidden;
-    padding-left: 30px;
 }
 
 .customCheckbox {
@@ -939,6 +939,8 @@ hr {
 }
 
 .table1_textarea {
+    border-radius: 3px;
+    transition: all .3s ease;
     border: 1px solid #ccc;
 }
 
@@ -955,3 +957,28 @@ hr {
     position: relative;
     overflow: hidden;
 }
+
+.popup_checkbox {
+    display: flex;
+}
+
+.button_hover:hover {
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+    transition: all .3s ease;
+    background-color: #07be51;
+}
+
+.last_inputs_table2 {
+    transition: all .3s ease;
+}
+
+.input_block_table2 input,
+.tdInput input,
+.last_inputs_table2 {
+    transition: all .3s ease;
+}
+
+#location {
+    transition: all .3s ease;
+}
+
