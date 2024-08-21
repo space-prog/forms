@@ -17,12 +17,12 @@
                 <form action="#" method="Get">
                     <input type="text" name="" placeholder="Введіть ім’я">
                     <input type="email" name="" id="form1_mail" placeholder="Email">
-                    <select name="" class="form1_select">
-                        <option disabled selected>Ваше місто</option>
-                        <option value="Kyiv" class="form1_option">Київ</option>
-                        <option value="Lviv" class="form1_option">Львів</option>
-                        <option value="Khmelnitskiy" class="form1_option">Хмельницький</option>
-                    </select>
+                    <label for="tableSelect" class="arrow arrow1">
+                        <select name="" id="tableSelect" class="tableSelect" required>
+                            <option value="" selected>Хмельницький</option>
+                            <option value="">Львів</option>
+                        </select>
+                    </label>
                     <textarea name="mail" class="form1_textarea" placeholder="Email"></textarea>
                     <button type="submit" id="form1_send">Зареєструватися</button>
                 </form>
