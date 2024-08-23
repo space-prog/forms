@@ -848,7 +848,6 @@ hr {
 }
 
 .customCheckbox {
-    appearance: none;
     border: 1px solid #ccc;
     width: 16px;
     height: 16px;
@@ -873,8 +872,8 @@ hr {
 .labelcustom span {
     display: none;
     position: absolute;
-    top: 1%;
-    left: 52%;
+    top: 22%;
+    left: 50%;
     width: 4px;
     height: 7px;
     border-right: 2px solid #3e6aff;
@@ -909,8 +908,6 @@ hr {
 .labelcustom span {
 	display: none;
 	position: absolute;
-	top: 35%;
-	left: 70%;
 	width: 4px;
 	height: 7px;
 	border-right: 2px solid #3e6aff;
@@ -1028,4 +1025,66 @@ hr {
 
 .padding {
     padding-left: 9px;
+}
+
+.pb {
+    padding-bottom: 15px;
+}
+
+span.top {
+    top: 35%;
+}
+
+.disabled:checked {
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.labelcustomradio {
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.customradio:checked {
+    border-color: #3e6aff;
+}
+
+.labelcustomradio {
+    display: inline-block;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.labelcustomradio span {
+    display: none;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translateX(-50%);
+    border: 1px solid #3e6aff;
+}
+
+.customCheckbox:checked + .labelcustomradio > span {
+    display: block;
+}
+
+.customradio:checked .labelcustomradio {
+    border: 1px solid #3e6aff;
+}
+
+.customradio:checked {
+	border-color: #3e6aff;
 }
