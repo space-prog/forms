@@ -842,40 +842,84 @@ hr {
     overflow: hidden;
 }
 
-.labelcustom {
-    display: inline-block;
-    padding-left: 9px;
-    font-size: 14px;
-    color: #1f222c;
-    font-weight: 400;
-    font-family: "Roboto";
-}
 
 .label_checkbox {
     overflow: hidden;
 }
 
 .customCheckbox {
-    position: absolute;
-    top: 145%;
-    left: 50%;
     appearance: none;
-    z-index: 5;
-    width: 9px;
-    height: 7px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(-180deg);
-    transition: all .3s ease;
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
 }
 
 .customCheckbox:checked {
-    top: 45%;
-    width: 6px;
-    height: 9px;
-    left: 50%;
     border-color: #3e6aff;
-    transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.labelcustom {
+    display: inline-block;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.labelcustom span {
+    display: none;
+    position: absolute;
+    top: 1%;
+    left: 52%;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid #3e6aff;
+    border-bottom: 2px solid #3e6aff;
+    transform: translateX(-50%) rotate(40deg);
+}
+
+.customCheckbox:checked + .labelcustom > span {
+    display: block;
+}
+
+.customCheckbox {
+	appearance: none;
+	border: 1px solid #ccc;
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+.customCheckbox:checked {
+	border-color: #3e6aff;
+}
+
+.labelcustom {
+	position: relative;
+	display: inline-block;
+}
+
+.labelcustom span {
+	display: none;
+	position: absolute;
+	top: 35%;
+	left: 70%;
+	width: 4px;
+	height: 7px;
+	border-right: 2px solid #3e6aff;
+	border-bottom: 2px solid #3e6aff;
+	transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.customCheckbox:checked + span {
+	display: block;
 }
 
 .checkboxtd {
@@ -982,3 +1026,6 @@ hr {
     transition: all .3s ease;
 }
 
+.padding {
+    padding-left: 9px;
+}
