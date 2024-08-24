@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
         tableSpan1 = document.querySelector("#tablespan1"),
         tableSpan2 = document.querySelector("#tablespan2"),
         tableSpan3 = [document.querySelector("#tablespan3")],
-        customCheckbox_table = [document.querySelector("customCheckbox_table")]
+        customCheckbox_table = [document.querySelector("customCheckbox_table")],
+        border = document.querySelectorAll(".border")
 
     
     console.log(checkedInput, checkedSpan)

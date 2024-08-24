@@ -183,6 +183,8 @@ button[type="submit"] {
 }
 
 #form1_send:hover {
+    background-color: #07be51;
+
     box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
 }
 
@@ -207,8 +209,8 @@ button[type="submit"] {
 .popup {
     display: none;
     position: fixed;
-    top: 60%;
-    right: 0;
+    top: 50%;
+    right: -50px;
     min-width: 280px;
     min-height: 252px;
     padding: 27px 25px;
@@ -413,36 +415,12 @@ hr {
     border: 1px solid #cccccc;
     z-index: 1;
     margin-bottom: 14px;
+    overflow: hidden;
 }
 
 .checkbox_span3 {
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
-}
-
-.checkbox_span1 input,
-.checkbox_span2 input,
-.checkbox_span3 input,
-.checkbox_span4 input {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    appearance: none;
-    width: 9px;
-    height: 7px;
-    background: url(../img/galochka.png);
-    z-index: 2;
-    opacity: 0;
-}
-
-#checkbox1:checked,
-#checkbox2:checked,
-#checkbox3:checked,
-#checkbox4:checked,
-#checkbox5:checked,
-#checkbox6:checked {
-    opacity: 1;
 }
 
 .custom_checkbox {
@@ -864,20 +842,23 @@ hr {
     overflow: hidden;
 }
 
-#labelcustom {
+.labelcustom {
     display: inline-block;
     padding-left: 9px;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
     font-family: "Roboto";
-    width: 380px;
 }
 
-#customCheckbox_table {
+.label_checkbox {
+    overflow: hidden;
+}
+
+.customCheckbox {
     position: absolute;
     top: 145%;
-    left: 45%;
+    left: 50%;
     appearance: none;
     z-index: 5;
     width: 9px;
@@ -888,12 +869,12 @@ hr {
     transition: all .3s ease;
 }
 
-#customCheckbox_table:checked {
+.customCheckbox:checked {
     top: 45%;
     width: 6px;
     height: 9px;
     left: 50%;
-    border-color:#3e6aff;
+    border-color: #3e6aff;
     transform: translate(-50%, -50%) rotate(40deg);
 }
 
@@ -958,6 +939,8 @@ hr {
 }
 
 .table1_textarea {
+    border-radius: 3px;
+    transition: all .3s ease;
     border: 1px solid #ccc;
 }
 
