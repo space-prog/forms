@@ -391,6 +391,7 @@ hr {
 .testt {
     display: flex;
     column-gap: 10px;
+    padding-bottom: 14px;
 }
 
 .inputs {
@@ -638,36 +639,6 @@ hr {
     transition: all .4s ease;
 }
 
-#labelman,
-#labelgirl {
-    display: inline-block;
-    padding-left: 25px;
-    font-size: 14px;
-    color: #1f222c;
-    font-weight: 400;
-    font-family: "Roboto";
-}
-
-#man,
-#girl {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    appearance: none;
-    z-index: 5;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: all .4s ease;
-}
-
-#man:checked,
-#girl:checked {
-    background-color: #3e6aff;
-}
-
 .span1 {
     display: block;
 }
@@ -695,6 +666,10 @@ hr {
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
+    transition: all .3s ease;
+}
+
+.FileLabelDiv:hover {
     box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
 }
 
@@ -842,40 +817,81 @@ hr {
     overflow: hidden;
 }
 
-.labelcustom {
-    display: inline-block;
-    padding-left: 9px;
-    font-size: 14px;
-    color: #1f222c;
-    font-weight: 400;
-    font-family: "Roboto";
-}
 
 .label_checkbox {
     overflow: hidden;
 }
 
 .customCheckbox {
-    position: absolute;
-    top: 145%;
-    left: 50%;
-    appearance: none;
-    z-index: 5;
-    width: 9px;
-    height: 7px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(-180deg);
-    transition: all .3s ease;
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
 }
 
 .customCheckbox:checked {
-    top: 45%;
-    width: 6px;
-    height: 9px;
-    left: 50%;
     border-color: #3e6aff;
+}
+
+.labelcustom {
+    display: inline-block;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.labelcustom span {
+    display: none;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid #3e6aff;
+    border-bottom: 2px solid #3e6aff;
+    transform: translateX(-50%) rotate(40deg);
+}
+
+.customCheckbox:checked+.labelcustom>span {
+    display: block;
+}
+
+.customCheckbox {
+    appearance: none;
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.customCheckbox:checked {
+    border-color: #3e6aff;
+}
+
+.labelcustom {
+    position: relative;
+    display: inline-block;
+}
+
+.labelcustom span {
+    display: none;
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid #3e6aff;
+    border-bottom: 2px solid #3e6aff;
     transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.customCheckbox:checked+span {
+    display: block;
 }
 
 .checkboxtd {
@@ -921,7 +937,7 @@ hr {
 }
 
 .buy:hover {
-    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
 }
 
 .buttons {
@@ -935,7 +951,7 @@ hr {
 
 .tbody2 input:focus:not([type="checkbox"]) {
     border: 1px solid #3e6aff;
-    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
 }
 
 .table1_textarea {
@@ -944,10 +960,128 @@ hr {
     border: 1px solid #ccc;
 }
 
-.tdradio1 {
+.tdradio1,
+.tdradio2 {
     display: flex;
 }
 
+.span_block6 {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.popup_checkbox {
+    display: flex;
+}
+
+.button_hover:hover {
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
+    transition: all .3s ease;
+    background-color: #07be51;
+}
+
+.last_inputs_table2 {
+    transition: all .3s ease;
+}
+
+.input_block_table2 input,
+.tdInput input,
+.last_inputs_table2 {
+    transition: all .3s ease;
+}
+
+#location {
+    transition: all .3s ease;
+}
+
+.padding {
+    padding-left: 9px;
+}
+
+.pb {
+    padding-bottom: 15px;
+}
+
+span.top {
+    top: 35%;
+}
+
+.disabled:checked {
+    cursor: not-allowed;
+    border-color: #e5e5e5;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.disradio {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+}
+
+.customradio {
+    appearance: none;
+    border: 1px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.customradio:checked {
+    border-color: #3e6aff;
+}
+
+.labelcustomradio {
+    display: inline-block;
+    position: relative;
+}
+
+.labelcustomradiotext {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+    padding-left: 9px;
+}
+
+.labelcustomradio span {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #3e6aff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customradio:checked+span {
+    display: block;
+}
+
+.pl {
+    padding-left: 0;
+}
+
+span.top_novapost {
+    top: 45%;
+}
+
 .arrow1 {
-    width: 331px;
+    max-width: 331px;
+
 }

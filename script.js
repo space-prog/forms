@@ -3,14 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         popupContainer = document.querySelector(".popup"),
         closePopup = document.querySelector(".close-popup"),
         checkedInput = [...document.querySelectorAll(".block3_checkboxes input")],
-        checkedSpan = [...document.querySelectorAll(".block3_checkboxes span")],
-        checkedRadioMan = document.querySelector("#man"),
-        checkedRadioGirl = document.querySelector("#girl"),
-        tableSpan1 = document.querySelector("#tablespan1"),
-        tableSpan2 = document.querySelector("#tablespan2"),
-        tableSpan3 = [document.querySelector("#tablespan3")],
-        customCheckbox_table = [document.querySelector("customCheckbox_table")],
-        border = document.querySelectorAll(".border")
+        checkedSpan = [...document.querySelectorAll(".block3_checkboxes span")]
 
     
     console.log(checkedInput, checkedSpan)
@@ -36,18 +29,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     })
-        
-    checkedRadioMan.addEventListener("change", function() {
-        tableSpan1.style.borderColor = "#3e6aff"
-    })
-
-    checkedRadioGirl.addEventListener("change", function() {
-        tableSpan2.style.borderColor = "#3e6aff"
-    })
-
-    // tableSpan3.forEach((tableSpan3, index) => {
-    //     tableSpan3.addEventListener("click", function () {
-    //         customCheckbox_table.checked = true
-    //     })
-    // })
 })
