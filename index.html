@@ -17,12 +17,12 @@
                 <form action="#" method="Get">
                     <input type="text" name="" placeholder="Введіть ім’я">
                     <input type="email" name="" id="form1_mail" placeholder="Email">
-                    <select name="" class="form1_select">
-                        <option disabled selected>Ваше місто</option>
-                        <option value="Kyiv" class="form1_option">Київ</option>
-                        <option value="Lviv" class="form1_option">Львів</option>
-                        <option value="Khmelnitskiy" class="form1_option">Хмельницький</option>
-                    </select>
+                    <label for="tableSelect" class="arrow arrow1">
+                        <select name="" id="tableSelect" class="tableSelect" required>
+                            <option value="" selected>Хмельницький</option>
+                            <option value="">Test</option>
+                        </select>
+                    </label>
                     <textarea name="mail" class="form1_textarea" placeholder="Email"></textarea>
                     <button type="submit" id="form1_send">Зареєструватися</button>
                 </form>
@@ -59,21 +59,23 @@
                     <div class="inputs">
                         <div class="radios">
                             <div class="testt">
-                                <span class="span">
-                                    <input type="radio" name="radio" id="radio1"></input>
-                                </span>
-                                <label for="radio1" class="radiolabel">Нова Пошта</label>
+                                <label class="labelcustomradio">
+                                    <input type="radio" name="radio" id="radio1" class="customradio">
+                                    <span class="top_novapost"></span>
+                                </label>
+                                <label for="radio1" class="labelcustomradiotext pl">Нова Пошта</label>
                             </div>
                             <div class="testt">
-                                <span class="span1">
-                                    <input type="radio" name="radio" id="radio2"></input>
-                                </span>
+                                <label class="labelcustomradio">
+                                    <input type="radio" name="radio" id="radio2" class="customradio">
+                                    <span></span>
+                                </label>
                                 <label for="radio2" class="radiolabel">Кур’єр</label>
                             </div>
                             <div class="testt">
-                                <span class="span2">
-                                    <input type="radio" id="radio3"></input>
-                                </span>
+                                <label class="labelcustomradio">
+                                    <input type="radio" name="stat" id="man" class="disabled disradio">
+                                </label>
                                 <label for="radio3" class="radio_label3 radiolabel">Самовивіз</label>
                             </div>
                         </div>
@@ -81,14 +83,14 @@
                             <div class="custom_checkbox">
                                 <label class="labelcustom">
                                     <input type="checkbox" name="radio" id="checkbox" class="customCheckbox">
-                                    <span ></span>
+                                    <span></span>
                                 </label>
                                 <label for="checkbox" class="checkboxlabel pb">Прочитав умови договору</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <label class="labelcustom">
                                     <input type="checkbox" name="radio" id="checkbox1" class="customCheckbox">
-                                    <span ></span>
+                                    <span></span>
                                 </label>
                                 <label for="checkbox1" class="checkboxlabel pb">Згідний з ПДВ 9%</label><br>
                             </div>
@@ -110,21 +112,21 @@
                             <div class="custom_checkbox">
                                 <label class="labelcustom">
                                     <input type="checkbox" name="radio" id="checkbox3" class="customCheckbox">
-                                    <span ></span>
+                                    <span></span>
                                 </label>
                                 <label for="checkbox3" class="checkboxlabel pb">Новинки</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <label class="labelcustom">
                                     <input type="checkbox" name="radio" id="checkbox4" class="customCheckbox">
-                                    <span ></span>
+                                    <span></span>
                                 </label>
                                 <label for="checkbox4" class="checkboxlabel pb">Акційні товари</label><br>
                             </div>
                             <div class="custom_checkbox">
                                 <label class="labelcustom">
                                     <input type="checkbox" name="radio" id="checkbox5" class="customCheckbox">
-                                    <span ></span>
+                                    <span></span>
                                 </label>
                                 <label for="checkbox5" class="checkboxlabel pb">Розпродаж</label><br>
                             </div>
@@ -217,15 +219,16 @@
                                 <div class="tdradio1">
                                     <label class="labelcustomradio">
                                         <input type="radio" name="stat" id="man" class="customradio">
-                                        <span class="adkls"></span>
+                                        <span></span>
                                     </label>
-                                    <label for="man" id="labelman">Чоловік</label>
+                                    <label for="man" id="labelman" class="labelcustomradiotext">Чоловік</label>
                                 </div>
                                 <div class="tdradio2">
-                                    <span id="tablespan2">
-                                        <input type="radio" name="stat" id="girl" required>
-                                        <label for="girl" id="labelgirl">Жінка</label>
-                                    </span>
+                                    <label class="labelcustomradio">
+                                        <input type="radio" name="stat" id="girl" class="customradio">
+                                        <span></span>
+                                    </label>
+                                    <label for="girl" id="labelgirl" class="labelcustomradiotext">Жінка</label>
                                 </div>
                             </td>
                         </tr>
@@ -316,7 +319,8 @@
                                     <input type="checkbox" name="radio" id="checkbox6" class="customCheckbox">
                                     <span class="top"></span>
                                 </label>
-                                <label for="checkbox6" class="labelcustom padding">Я погоджуюсь з правилами оплати та доставки товару</label>
+                                <label for="checkbox6" class="labelcustom padding">Я погоджуюсь з правилами оплати та
+                                    доставки товару</label>
                             </div>
                         </td>
                     </tr>
