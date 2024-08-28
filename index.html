@@ -14,13 +14,13 @@
         <div class="block1">
             <div class="form1">
                 <p class="name">01. проста форма</p>
-                <form action="#" method="Get">
-                    <input type="text" name="" placeholder="Введіть ім’я">
-                    <input type="email" name="" id="form1_mail" placeholder="Email">
+                <form action="php/form1.php" method="post">
+                    <input type="text" name="name" placeholder="Введіть ім’я">
+                    <input type="email" name="mail1" placeholder="Email">
                     <label for="tableSelect" class="arrow arrow1">
-                        <select name="" id="tableSelect" class="tableSelect" required>
-                            <option value="" selected>Хмельницький</option>
-                            <option value="">Test</option>
+                        <select name="form1select" id="tableSelect" class="tableSelect" required>
+                            <option value="khmelnitskiy" selected>Хмельницький</option>
+                            <option value="test">Test</option>
                         </select>
                     </label>
                     <textarea name="mail" class="form1_textarea" placeholder="Email"></textarea>
@@ -74,7 +74,7 @@
                             </div>
                             <div class="testt">
                                 <label class="labelcustomradio">
-                                    <input type="radio" name="stat" id="man" class="disabled disradio">
+                                    <input type="radio" name="radio" id="radio3" class="disabled disradio">
                                 </label>
                                 <label for="radio3" class="radio_label3 radiolabel">Самовивіз</label>
                             </div>
@@ -178,7 +178,7 @@
         <hr>
         <div class="block4">
             <p class="name name1">04. форма таблицею</p>
-            <form action="#" method="Get" class="form4">
+            <form action="php/form4.php" method="post" class="form4">
                 <table class="table1">
                     <thead>
                         <th>Заповніть усі необхідні поля</th>
@@ -188,14 +188,14 @@
                             <td>
                                 <p>ФІО:</p>
                             </td>
-                            <td class="tdInput"><input type="text" name="" placeholder="Введіть ім’я" class="tableInput"
+                            <td class="tdInput"><input type="text" name="name" placeholder="Введіть ім’я" class="tableInput"
                                     required></td>
                         </tr>
                         <tr>
                             <td>
                                 <p>Пароль:</p>
                             </td>
-                            <td class="tdInput"><input type="password" name="" class="tableInput"
+                            <td class="tdInput"><input type="password" name="pass" class="tableInput"
                                     placeholder="Введіть не менше 6 символів" required></td>
                         </tr>
                         <tr>
@@ -204,9 +204,9 @@
                             </td>
                             <td>
                                 <label for="tableSelect" class="arrow">
-                                    <select name="" id="tableSelect" class="tableSelect" required>
-                                        <option value="" selected>Хмельницький</option>
-                                        <option value="">Test</option>
+                                    <select name="select" id="tableSelect" class="tableSelect" required>
+                                        <option value="khmelnitskiy" selected>Хмельницький</option>
+                                        <option value="test">Test</option>
                                     </select>
                                 </label>
                             </td>
@@ -218,14 +218,14 @@
                             <td class="radiotd">
                                 <div class="tdradio1">
                                     <label class="labelcustomradio">
-                                        <input type="radio" name="stat" id="man" class="customradio">
+                                        <input type="radio" name="stat" id="man" class="customradio" value="man">
                                         <span></span>
                                     </label>
                                     <label for="man" id="labelman" class="labelcustomradiotext">Чоловік</label>
                                 </div>
                                 <div class="tdradio2">
                                     <label class="labelcustomradio">
-                                        <input type="radio" name="stat" id="girl" class="customradio">
+                                        <input type="radio" name="stat" id="girl" class="customradio" value="girl">
                                         <span></span>
                                     </label>
                                     <label for="girl" id="labelgirl" class="labelcustomradiotext">Жінка</label>
@@ -237,7 +237,7 @@
                                 <p>Фото:</p>
                             </td>
                             <td class="tdFile">
-                                <input type="file" name="" id="inputFile" required>
+                                <input type="file" name="File" id="inputFile" required>
                                 <div class="FileLabelDiv"><label for="inputFile" id="FileLabel">Виберіть файл</label>
                                 </div>
                             </td>
@@ -247,7 +247,7 @@
                                 <p>Коментарій:</p>
                             </td>
                             <td class="textTd">
-                                <textarea name="" placeholder="Введіть текст повідомлення" required
+                                <textarea name="textarea" placeholder="Введіть текст повідомлення" required
                                     class="table1_textarea"></textarea><br>
                                 <button type="submit" class="button_hover">Зареєструватися</button>
                             </td>
