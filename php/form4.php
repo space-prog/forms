@@ -24,6 +24,7 @@ if($_POST) {
     
         $urlQuery = "https://api.telegram.org/bot". $token . "/sendMessage?chat_id=". $chat_id ."&text=" .
         "<b>Заявка з сайту Forms: </b>%0A" .
+        "<b>Form4: </b>%0A" .
         "<i>Ім'я замовника: $name</i>%0A" .
         "<i>Пароль: $pass</i>%0A" .
         "<i>Данні з селект: $select</i>%0A" .

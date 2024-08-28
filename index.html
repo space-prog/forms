@@ -258,87 +258,89 @@
         </div>
         <hr>
         <div class="block5">
-            <p class="name name1">05. форма таблицею</p>
-            <table>
-                <thead>
-                    <th class="th1">Оформлення заявки</th>
-                </thead>
-                <tbody class="tbody2">
-                    <tr class="table2tr tr_first">
-                        <td>
-                            <p>Прізвище та ім’я</p>
-                            <div class="input_block_table2"><input type="text" name="" id=""></div>
-                        </td>
-                        <td>
-                            <p>Ел. пошта</p>
-                            <div class="input_block_table2"><input type="email" name="" id=""></div>
-                        </td>
-                        <td>
-                            <p>Телефон</p>
-                            <div class="input_block_table2"><input type="tel" name="" id=""></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <hr class="table_hr">
-                        </td>
-                    </tr>
-                    <tr class="table2tr">
-                        <td>
-                            <p>Країна</p>
-                            <label for="tableSelect" class="table_arrow">
-                                <select name="" id="tableSelect1" class="tableSelect1" required>
-                                    <option value="" selected>Індонезія</option>
-                                    <option value="">Test</option>
-                                </select>
-                            </label>
-                        </td>
-                        <td class="location_td">
-                            <p>Адреса</p>
-                            <input type="text" name="" id="location">
-                        </td>
-                    </tr>
-                    <tr class="table2tr tr_last">
-                        <td>
-                            <p>Місто</p>
-                            <input type="text" name="" id="" class="last_inputs_table2">
-                        </td>
-                        <td>
-                            <p>Будинок</p>
-                            <input type="text" name="" id="" class="last_inputs_table2">
-                        </td>
-                        <td>
-                            <p>Поштовий індекс</p>
-                            <input type="text" name="" id="" class="last_inputs_table2">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="checkboxtd">
-                            <div class="tdradio1">
-                                <label class="labelcustom">
-                                    <input type="checkbox" name="radio" id="checkbox6" class="customCheckbox">
-                                    <span class="top"></span>
+            <form action="php/form5.php" method="post">
+                <p class="name name1">05. форма таблицею</p>
+                <table>
+                    <thead>
+                        <th class="th1">Оформлення заявки</th>
+                    </thead>
+                    <tbody class="tbody2">
+                        <tr class="table2tr tr_first">
+                            <td>
+                                <p>Прізвище та ім’я</p>
+                                <div class="input_block_table2"><input type="text" name="name" id=""></div>
+                            </td>
+                            <td>
+                                <p>Ел. пошта</p>
+                                <div class="input_block_table2"><input type="email" name="mail" id=""></div>
+                            </td>
+                            <td>
+                                <p>Телефон</p>
+                                <div class="input_block_table2"><input type="tel" name="phone" id=""></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr class="table_hr">
+                            </td>
+                        </tr>
+                        <tr class="table2tr">
+                            <td>
+                                <p>Країна</p>
+                                <label for="tableSelect" class="table_arrow">
+                                    <select name="select" id="tableSelect1" class="tableSelect1" required>
+                                        <option value="indonesia" selected>Індонезія</option>
+                                        <option value="test">Test</option>
+                                    </select>
                                 </label>
-                                <label for="checkbox6" class="labelcustom padding">Я погоджуюсь з правилами оплати та
-                                    доставки товару</label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <hr class="table_hr1">
-                        </td>
-                    </tr>
-                    <tr class="flex-between buttons">
-                        <td>
-                            <button class="goback">Повернутися назад</button>
-                        </td>
-                        <td class="td_buy">
-                            <button type="submit" class="buy button_hover">Оформити покупку</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td class="location_td">
+                                <p>Адреса</p>
+                                <input type="text" name="location" id="location">
+                            </td>
+                        </tr>
+                        <tr class="table2tr tr_last">
+                            <td>
+                                <p>Місто</p>
+                                <input type="text" name="city" id="" class="last_inputs_table2">
+                            </td>
+                            <td>
+                                <p>Будинок</p>
+                                <input type="text" name="house" id="" class="last_inputs_table2">
+                            </td>
+                            <td>
+                                <p>Поштовий індекс</p>
+                                <input type="text" name="index" id="" class="last_inputs_table2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkboxtd">
+                                <div class="tdradio1">
+                                    <label class="labelcustom">
+                                        <input type="checkbox" name="checkbox" id="checkbox6" class="customCheckbox">
+                                        <span class="top"></span>
+                                    </label>
+                                    <label for="checkbox6" class="labelcustom padding">Я погоджуюсь з правилами оплати та
+                                        доставки товару</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr class="table_hr1">
+                            </td>
+                        </tr>
+                        <tr class="flex-between buttons">
+                            <td>
+                                <button class="goback">Повернутися назад</button>
+                            </td>
+                            <td class="td_buy">
+                                <button type="submit" class="buy button_hover">Оформити покупку</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
